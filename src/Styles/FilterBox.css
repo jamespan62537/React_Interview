@@ -1,0 +1,61 @@
+.filterBox-container {
+  background-color: white;
+  margin: 20px 0;
+}
+ul {
+  display: flex;
+  flex-direction: row;
+}
+ul li {
+  position: relative;
+  padding: 20px 50px;
+}
+ul li:hover {
+  background-color: #ef5c28;
+  transition: ease-in-out 0.2s;
+  cursor: pointer;
+}
+ul li:hover > a {
+  color: white;
+}
+ul a {
+  text-decoration: none;
+  color: #333;
+  display: block;
+  padding: 0 30px;
+  line-height: 40px;
+  pointer-events: none;
+}
+ul li ul {
+  visibility: hidden;
+  display: none;
+  z-index: 99;
+  opacity: 0;
+  position: absolute;
+  transition: all 0.5s ease;
+  margin-top: 1rem;
+  left: 0;
+  box-shadow: 3px 3px 8px -3px;
+}
+ul li:hover > ul,
+ul li ul:hover {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+}
+ul li ul li {
+  font-size: 15px;
+  background-color: #fff;
+}
+ul li ul li:hover {
+  color: #fff;
+}
+ul .filter-string:hover {
+  background-color: #fff;
+  cursor: default;
+}
+ul .filter-string:hover > a {
+  color: black;
+  background-color: #fff;
+  cursor: default;
+}

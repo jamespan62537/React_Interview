@@ -1,0 +1,18 @@
+.tourList-container ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.tourList-container ul li {
+  display: flex;
+  flex-direction: row;
+  margin: 20px 0;
+  background-color: white;
+}
+.tourList-container ul li .tour-img {
+  width: 20%;
+}
+.tourList-container ul li .tour-detail {
+  width: 80%;
+  padding: 20px;
+}
